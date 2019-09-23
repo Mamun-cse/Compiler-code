@@ -25,13 +25,13 @@ int isChar()
     if(str[0]!='c'||str[1]!='h'||str[2]!='_')return 0;
     for(int i=3;str[i];i++)
     {
-        if(!isalnum(str[i]))
+        if(isalnum(str[i]))
         {
-            return 0;
+            continue;
         }
         else
         {
-             return 1;
+             return 0;
         }
 
     }
@@ -43,13 +43,13 @@ int isBinaryVar()
     if(str[0]!='b'||str[1]!='n'||str[2]!='_')return 0;
     for(int i=3;str[i];i++)
     {
-        if(!isalnum(str[i]))
+        if(isalnum(str[i]))
         {
-            return 0;
+            continue;
         }
         else
         {
-             return 1;
+             return 0;
         }
 
     }
